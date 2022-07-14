@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+  }
+
+
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header header  header  header  header   header"
+    "aside nav     nav     nav     nav     nav  "
+    "aside section section section section section"
+    "aside section section section section section"
+    "aside section section section section section"
+    "aside section section section section section";
+     align-content: flex-start;
+     background-color:rgb(246, 241, 241) ;
+  }
+
+h4{
+    font-size: 17px;
+    
+}
+
+h5{
+    text-align: justify;
+    padding-left: 21%;
+    color: rgb(125, 125, 125);
+}
+  
+   /*Comienzo header*/
+  
+  header{
+    
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background-color: white;
+    padding-right: 50px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    opacity: 97%;
+    }
+
+     .Luna{
+      
+       width: 48px;
+       height: 48px;
+       cursor: pointer;
+     }
+    
+    .logo{
+        display: flex;
+        width: 350px;
+        justify-content: center;
+        
+        
+    }
+    
+    .logoMY{
+        width:clamp(20px,20%,500px);
+        padding-top: 1px;
+        padding-left: 10px;
+        width: 200px;
+        height: 45px;
+    }
+    
+    .buscar{
+        
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .busqueda{
+        width:clamp(20px,30%,500px);
+        border:0.1px solid;
+        border-radius: 30px;
+        text-align: center;
+        width: 300px;
+        height: 76%;
+    }
+
+    button{
+        border:none;
+        background-color: white;
+      
+    }
+    .lupa{
+        width: 40px;
+        height: 31px;
+        cursor: pointer;
+    }
+    
+    .opciones{
+        width: 160px;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .btnopcion{
+        width: 36px;
+        height: 36px;
+
+    }
+    .btnopcion:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    /*Fin header*/
+    
+    /*comienzo nav*/
+    nav {
+     
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        padding-left: 250px;
+        z-index: 2;
+        grid-area: nav;
+        border-top: 0.5px solid rgb(185, 183, 183);
+        opacity: 97%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap:35px    
+        }
+
+    h2{
+
+    width: 140px;
+    background-color:rgb(241, 234, 234);
+    border-radius: 20px;
+    border:solid 1px rgb(176, 170, 170);
+    font-weight: 100;
+    text-align: center;
+    transition: 1s;
+ 
+    }
+
+    h2:first-child{
+        color: white;
+        background-color: black;
+     }
+
+    h2:hover{
+      cursor: pointer;
+      background-color: rgb(154, 150, 150);;
+    }
+/*Fin nav*/
+
+/*Comienzo aside*/
+aside{
+   
+    overflow-y: scroll;
+    position:fixed;
+    top: 50px;
+    z-index: 3;
+    grid-area: aside;
+    width: 340px;
+    height:95%;
+    background-color: white;
+    
+}
+
+
+.h3aside{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 40px;
+    font-size: 20px;
+    transition: 1s;
+    
+}
+.h3aside:hover{
+    background-color: rgb(237, 230, 230);
+    cursor: pointer;
+}
+
+.h3aside:first-child{
+    color: black;
+    background-color:  rgb(237, 230, 230);
+}
+
+.principal{
+    
+    height: 170px;  
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.iconoaside{
+    width: 35px;
+    height: 35px;
+}
+.miMetube{
+   padding-top: 30px;
+   height: 240px;
+   border-bottom: 1px solid rgb(201, 201, 201);  
+  
+}
+.suscripciones{
+   
+   padding-top: 20px;
+   height: 400px;
+   border-bottom: 1px solid rgb(201, 201, 201);
+
+}   
+
+.contenedor-2{
+
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap:22px;
+    transition: 1s;
+    
+}
+
+.contenedor-2:hover{
+    background-color:rgb(237, 230, 230); 
+    cursor: pointer;
+}
+
+.imagensus{
+    
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.h3sus{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color:rgb(94, 90, 90)   
+}
+
+.Psus{
+    font-size:20px;
+}
+
+.masOpciones{ 
+   padding-top: 20px;
+   height: 320px;  
+   border-bottom: 1px solid rgb(201, 201, 201);
+   
+}
+
+.configuracion{
+    padding-top: 20px;
+    height: 210px;  
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+footer{
+    padding-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 200px;  
+ 
+}
+
+.pfooter:hover{
+    cursor: pointer;
+}
+
+.marcadeagua{
+    color: rgb(184, 179, 179);
+    font-size: 15px;
+}
+/*Fin aside*/
+
+/*Comienzo section*/
+section{
+  
+   
+    width: auto;
+    height: auto;
+    background-color: rgb(246, 241, 241);
+    
+    padding-top: 150px;
+    padding-right: 70px;
+    grid-area:section;
+    justify-content: flex-end;
+  
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(10px, 340px));
+    
+    gap:40px;
+   
+
+    
+    }
+    .canal{
+        text-align: justify;
+        padding-left: 21%;
+        color: rgb(164, 158, 158);
+    }
+
+  
+    .contenedor{
+        display: flex;
+        gap: 30px;
+    }
+    
+    .logosCanales{
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        
+    }
+    
+    iframe{
+           width: 350px;
+           height: 230px;
+   }
+ 
+.video{
+    transition: 1s;
+
+}
+
+.video:hover{
+    
+    transform: scale(1.1);
+      }
+  /*Fin section*/
+

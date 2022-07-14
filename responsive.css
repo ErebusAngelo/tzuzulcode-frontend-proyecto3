@@ -1,0 +1,73 @@
+
+header{
+   
+    width: 100%;
+    
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+
+.logoMY{
+    
+    padding-top: 1px;
+    max-width: 125px;
+    height: 35px;
+}
+.buscar{
+    
+    display: flex;
+    justify-content: flex-end;
+  
+    gap: 5px;
+
+    
+}
+.busqueda{
+    padding-right: 170px;
+   width: 70px;
+    height: 50%;
+}
+h2{
+
+    width: 500px;
+    background-color:rgb(241, 234, 234);
+    border-radius: 20px;
+    border:solid 1px rgb(176, 170, 170);
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    transition: 1s;
+ 
+    }
+
+.opciones{
+   padding-left: 40px;
+    /* display: none; */
+}
+
+nav{
+    overflow-x: scroll;
+ padding-left: 140px;
+}
+
+h2{
+    padding: 0 15px; 
+}
+aside{
+    display:none
+}
+
+section{
+    justify-content: center;
+    padding-right: 70px;
+    width: 100%;
+    height: auto;
+}
+.Luna{
+      
+    display: none;
+  }
